@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BGM</title>
+<style>
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+img {
+    width: 300px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<img src="cover.png" onclick="playMusic()">
+
+<audio id="bgm" src="music.mp3"></audio>
+
+<script>
+function playMusic() {
+    document.getElementById("bgm").play();
+}
+</script>
+
+</body>
+</html>
